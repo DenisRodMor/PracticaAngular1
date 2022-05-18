@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Producto } from '../producto.model';
+import { Producto } from '../model/producto.model';
 
 @Component({
   selector: 'app-producto-hijo-c',
