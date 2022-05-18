@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+        <div>
+          <br> <!--{{indice+1}}--> {{productoDeLista.id}}: Nombre: {{productoDeLista.nombre}} <br>Precio: ₡{{productoDeLista.precio}} <!--{{info principal del producto}}-->
+          <a [routerLink]="['/detalle', indice]"> <!--esto lo que hace es que agarre el indice del producto y viaje por la URL para mostrar la info-->
+            <button class="btn btn-primary">Ver Detalle</button> <!--boton que redirige a la pantalla donde se muestra el detalle del producto-->
+          </a>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+

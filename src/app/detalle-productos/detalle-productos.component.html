@@ -1,0 +1,36 @@
+<form class="form-goup row"> <!--Formulario para traer los datos del producto-->
+
+  <div class="form-group col-md-3">
+    <label for="nombre">Nombre: </label>
+    <input type="tet" name="nombre" id="nombre" placeholder="Nombre" class="form-control" [(ngModel)]="cuadroNombre">
+  </div>
+
+  <div class="form-group col-md-3">
+    <label for="descripcion">Descripcion: </label>
+    <input type="tet" name="descripcion" id="descripcion" placeholder="Descripcion" class="form-control" [(ngModel)]="cuadroDescripcion">
+  </div>
+
+  <div class="form-group col-md-3">
+    <label for="fechaingreso">Fecha Ingreso: </label>
+    <input type="tet" name="fechaingreso" id="fechaingreso" placeholder="Fecha Ingreso" class="form-control" [(ngModel)]="cuadroFechaIngreso">
+  </div>
+
+  <div class="form-group col-md-3">
+    <label for="precio">Precio: </label>
+    <input type="tet" name="precio" id="precio" placeholder="Precio" class="form-control" [(ngModel)]="cuadroPrecio">
+  </div>
+
+  <div class="form-group col-md-3">
+    <label for="cantidad">Cantidad: </label>
+    <input type="tet" name="cantidad" id="nombre" placeholder="Cantidad" class="form-control" [(ngModel)]="cuadroCantidad">
+  </div>
+  <br><br><br>
+
+
+</form>
+
+
+
+<div style="text-align: center;">
+  <button class="btn btn-primary" (click)="volverHome()">Listado de Productos</button> <!--Boton para volver al listado de los productos-->
+</div>

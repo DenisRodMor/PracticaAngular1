@@ -1,0 +1,28 @@
+
+
+<div class="container">
+
+  <div class="col" style="text-align: center;"><h1>{{titulo}}</h1></div> <!--titulo a mostrar-->
+
+  <br>
+
+</div>
+
+<div style="text-align: center;">
+<button class="btn btn-primary"
+        (click)="prevPage()"> <!--Boton para volver a la pagina de atras de productos-->
+  Anterior
+</button>
+
+&nbsp;
+<button class="btn btn-primary"
+        (click)="nextPage()"
+        [disabled]="(productos | filtro: page).length ===0"> <!--Boton para ir a la pagina siguiente de productos-->
+  Siguiente
+</button>
+</div>
+
+<app-producto-hijo-c  *ngFor="let producto of productos | filtro: page; let i=index " [productoDeLista]="producto" [indice]="i"></app-producto-hijo-c>
+<br> <!--Estamos trayendo la info que tenemos de nuestro componente hijo para que sea mostrado en pantalla-->
+
+
