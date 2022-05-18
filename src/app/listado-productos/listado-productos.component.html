@@ -11,14 +11,14 @@
 <div style="text-align: center;">
 <button class="btn btn-primary"
         (click)="prevPage()"> <!--Boton para volver a la pagina de atras de productos-->
-  Anterior
+  Página Anterior
 </button>
 
 &nbsp;
 <button class="btn btn-primary"
         (click)="nextPage()"
         [disabled]="(productos | filtro: page).length ===0"> <!--Boton para ir a la pagina siguiente de productos-->
-  Siguiente
+  Siguiente Página
 </button>
 </div>
 
